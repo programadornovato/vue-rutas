@@ -1,7 +1,7 @@
 <template>
   <div class="caracteristicas">
     <h1>caracteristicas desde vista</h1>
-    <router-link 
+    <router-link class="btn btn-success m-1"
     v-for="(car,index) of listaCar"
     :to="{name: 'caracteristicas',params:{id:car}}"
     :key="index"
@@ -10,6 +10,7 @@
     <button @click="home" >Home</button>
     <button @click="atras" >Atras</button>
     <button @click="adelante" >Adelante</button>
+    <b-alert show>Default Alert</b-alert>
   </div>
 </template>
 
